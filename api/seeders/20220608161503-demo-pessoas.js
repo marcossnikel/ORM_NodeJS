@@ -56,3 +56,4 @@ module.exports = {
 		return queryInterface.bulkDelete('Pessoas', null, {})
   }
 }
+
