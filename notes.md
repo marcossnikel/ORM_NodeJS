@@ -77,3 +77,34 @@ Create a new controller and route to or 'Pessoas' table
 > Crud Methods
 - Create ; Register ; Update and Delete
 
+
+
+## Relationships and associations
+
+Table Pessoas -> Created and  Controller Created
+
+PK -> Primary Key
+
+Ordem -> modelos que nao usam FK -> Foreign Keys
+
+You need to create the migrations in order of use (using the relationship) of then to check the order   
+
+
+## Associations 
+    Relationships between columns
+    HasOne -> Ex: One Book  ' hasOne' Price
+    BelongsTo -> 
+    HasMany -> One to Many
+    BelongsToMany
+
+
+    -> Methods !!
+
+
+You need to associate both sides of the relationship -> reference the table that will be used in DB
+
+Matriculas needs to be associated with Pessoas in their controllers and routes !
+
+
+
+

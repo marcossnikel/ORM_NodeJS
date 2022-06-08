@@ -4,12 +4,18 @@ const PessoaController = require('../controllers/PessoaController');
 
 const router = Router();
 
+router
+    .get('/pessoas', PessoaController.pickAllPersons)
+    .get('/pessoas/:id', PessoaController.pickOnePerson)
+    .post('/pessoas', PessoaController.newPerson)
+    .put('/pessoas/:id', PessoaController.updatePerson)
+    .delete('/pessoas/:id', PessoaController.deletePerson)
 
-router.get('/pessoas',PessoaController.pickAllPersons);
-router.get('/pessoas/:id',PessoaController.pickOnePerson);
-router.post('/pessoas',PessoaController.newStudent);
-router.put('/pessoas/:id',PessoaController.updateRegister);
-router.delete('/pessoas/:id',PessoaController.deleteRegister);
+    //Registers(Matriculas)
+    .get('/pessoas/:estudanteId/register/:matriculaId',PessoaController.pickOneRegister)
+    .post('/pessoas/:estudanteId/register',PessoaController.createOneRegister)
+    .put('/pessoas/:estudanteId/register/:matriculaId',PessoaController.updateRegister)
+    .delete('/pessoas/:estudanteId/register/:matriculaId',PessoaController.deleteRegister)
 
 
 module.exports = router;
