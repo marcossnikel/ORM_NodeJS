@@ -11,4 +11,4 @@ router
     .delete('/classes/:id', TurmaController.deleteClass)
 
 
-    module.exports = router
+    module.exports = router;
