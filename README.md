@@ -12,3 +12,5 @@ Stacks Used : NodeJS (Javascript) ; Express ; Sequelize ; Sequelize-Cli ; Body-P
 
 In DB , the relationships and associations complement themselves
 
+
+- Made by : Marcos Nikel
