@@ -3,7 +3,7 @@
 > This project was made with the pourpose to practice API creation with REST pattern
 > And also to me understand about Seeders and Migrations 
 
-The project consists in one System of an School of English , with the possiblities to CREATE, READ , UPDATE AND DELETE data
+The project consists in one System of an English School , with the possiblities to CREATE, READ , UPDATE AND DELETE data
 
 Databased Use : mySQL
 
