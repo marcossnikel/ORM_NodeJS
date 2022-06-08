@@ -30,24 +30,26 @@ up -> create migration ; create table
 down -> delete migration ; drop table
 WHAT IS AN MIGRATION ???
 
-- Migração de dados -> Tranferencia de dados entre plataformas (MUDA BANDO DE DADOS , SERVIÇOS , etc)
-- in project : Migração com ORM (Alterações incrementais e rastreáveis no banco) -> Alterações realizadas no banco (impactam no sistema) -> migração em ORM -> COMO ALTERAR AS TABELAS/ENTIDADES DE UMA FORMA QUE SEJA RASTREÁVEL E SE DER RUIM DA P VOLTAR.
-
-- É necessário coordenar alterações feitas por diferentes pessoas do time nas tabelas do banco.
-- Rastrear e reverter alterações feitas no banco para debugar conflitos e erros.
-
-Gerar alterações e guardar -> comando MIGRATE
+- Data Migration -> Transfer data between plataforms (CHANGE DATABASES, SERVICES , ETC)
+- in project : Migration with ORM (Incremental changes and traceable in DB) -> Changes in file (impactam no sistema) -> migration in ORM -> HOW TO CHANGE TABLES IN ONE WAY THAT BECAME TRACEABLE AND WITH GOES WRONG IT IS POSSIBLE TO REVERT
 
 
 
-POPULANDO O BANCO !!!
-usar arquivos seeds ('sementes) => tambem presente no Sequelize
+- It is necessary coordenate changes made by different persons in team in tables of db
+- Track and revert changes made in DB to debug conflicts and errors.
 
--> serve p enche o banco, so dar o exemplo de dado
+Generate changes and store ->  MIGRATE command
 
 
 
-- - - - PADRÃO MVC - - - -
+PLUNDER OR DB!!!
+using - SEEDS - files -> also presents in Sequelize
+
+-> He servers for fill or DB , give an EXAMPLE of DATA
+
+
+
+- - - - MVC PATTERN - - - -
 MODEL
 VIEW
 CONTROLLER
@@ -85,7 +87,7 @@ Table Pessoas -> Created and  Controller Created
 
 PK -> Primary Key
 
-Ordem -> modelos que nao usam FK -> Foreign Keys
+Order to create  -> models that don´t use FK - - - -> Foreign Keys
 
 You need to create the migrations in order of use (using the relationship) of then to check the order   
 
